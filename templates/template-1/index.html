@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="./pics/7947458d657da84c7b412c2b3b0987b5.png" alt="bg" id="bg">
+    <nav>
+        <h1><a href="../../" style="text-decoration: none; color: white;">THE BEST RESUME BUILDER</a></h1>
+    </nav>
+
+
+
+
+
+
+
+
+<div id="resumeForm">
+        <div id="form">
+        <div>
+        <div>
+        <h3>Basic Information:</h3>
+        <input type="text" name="formName" id="formName" placeholder="Enter Your Name">
+        <input type="text" name="formRole" id="formRole" placeholder="Enter Your Job Role">
+        <input type="text" name="formAbout" id="formAbout" placeholder="Tell about yourself">
+        <h3>Select Your Skills:</h3>
+        <span style="display: flex; justify-content: space-between;">
+        <span>
+            <input type="checkbox" name="formC" id="formC" style="padding: 0; margin:0;">
+            <label  style="padding: 0; margin:0;" for="formC">C</label>
+        </span>
+        <span>
+            <input type="checkbox" name="formPython" id="formPython" style="padding: 0; margin:0;">
+            <label  style="padding: 0; margin:0;" for="formPython">Python</label>
+        </span>
+        <span>
+            <input type="checkbox" name="formCpp" id="formCpp" style="padding: 0; margin:0;">
+            <label  style="padding: 0; margin:0;" for="formCpp">C++</label>
+        </span>
+        <span>
+            <input type="checkbox" name="formJava" id="formJava" style="padding: 0; margin:0;">
+            <label  style="padding: 0; margin:0;" for="formJava">Java</label>
+        </span>
+        </span>
+
+        <h3>Contact</h3>
+        <input type="number" name="formPhno" id="formPhno" placeholder="Phone Number">
+        <input type="email" name="formEmail" id="formEmail" placeholder="Email">
+        <input type="text" name="formStateAndCountry" id="formStateAndCountry" placeholder="State, Country">
+        </div>
+
+        <div>
+        <h3>Education:</h3>
+        <input type="text" name="formCollege" id="formCollege" placeholder="Enter College Name">
+        <input type="text" name="formDegree" id="formDegree" placeholder="Enter Degree Name">
+        <input type="number" name="formCollegeCGPA" id="formCollegeCGPA" placeholder="Enter CGPA" max="10" />
+
+        <input type="text" name="formHighSchool" id="formHighSchool" placeholder="Enter High School Name">
+        <input type="number" name="formHighSchoolCGPA" id="formHighSchoolCGPA" placeholder="Enter CGPA" max="10">
+        <h3>Experience</h3>
+        <input type="text" name="formCompanyName" id="formCompanyName" placeholder="Enter Company Name">
+        <input type="text" name="formCompanyDescription" id="formCompanyDescription" placeholder="Description">
+        <h3>Projects</h3>
+        <input type="text" name="formProjectName" id="formProjectName" placeholder="Project Name">
+        <input type="text" name="formProjectDescription" id="formProjectDescription" placeholder="Description">
+        </div>
+        </div>
+
+        <section id="colors">
+            <h3>Select Right Color</h3>
+            <div>
+                <section id="gray"></section>
+                <section id="red"></section>
+                <section id="blue"></section>
+                <section id="lime"></section>
+                <section id="yellow"></section>
+            </div>
+            <button onclick="generatePDF()">Download PDF</button>
+        </section>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="body">
+    <section id="left">
+        <img src="./pics/DP.jpg" alt="displayPic" id="displayPic">
+
+        <div id="skill">
+            <span>
+                <h1>Skills</h1> 
+            </span>
+            <hr style="margin-bottom: 10px;">
+            <p style="display: none;" id="python">Python</p>
+            <p style="display: none;" id="c">C</p>
+            <p style="display: none;" id="cpp">C++</p>
+            <p style="display: none;" id="java">Java</p>
+        </div>
+        
+        <div id="education">
+            <h1>Education</h1>
+            <hr>
+            <section id="college">
+                <h1>College Name</h1>
+                <h2 style="font-size: 15px;">Degree Name</h3>
+                <h3 style="font-size: 13px;">CGPA</h3>
+            </section>
+            <section id="highSchool">
+                <h1>High School Name</h1>
+                <h3 style="font-size: 13px;">CGPA/Percentage</h3>
+            </section>
+        </div>
+        
+        <div id="contact">
+            <h1>Contact</h1>
+            <hr>
+            <span>
+                <p id="phno">Phone Number</p>
+            </span>
+            
+            <span>
+                <p id="email">Email Address</p>
+            </span>
+            <span>
+                <p id="StateAndCountry">State and Country</p>
+            </span>
+        </div>
+    </section>
+
+
+    <section id="right">
+        <div id="name">
+            <h1>Harry Potter</h1>
+            <h3>Web Developer</h3>
+        </div>
+
+        <div id="about">
+            <h1>About</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima molestiae voluptatum quam tempore facilis fugiat voluptas, ipsam iusto minus odio! Nobis architecto veniam maxime atque, reprehenderit consequatur optio vero rem, consectetur nam omnis facere est vel deserunt natus sint?</p>
+        </div>
+
+        <div id="workExp">
+            <h1>Experience</h1>
+            <hr>
+            <h2>Company Name</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, cumque. Excepturi alias architecto ut ipsa est rem itaque nam? Provident.</p>
+        </div>
+
+        <div id="projects">
+            <h1>Projects</h1>
+            <hr>
+            <div>
+                <h2>Project Name</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, culpa!</p>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

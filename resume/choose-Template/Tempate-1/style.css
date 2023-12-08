@@ -1,0 +1,140 @@
+#body{
+    background-color: white;
+    display: flex;
+    width: 620px;
+    height: 840px;
+    box-shadow: 0 0 15px black;
+    margin: auto;
+    /* border-radius: 7px; */
+    overflow: hidden;
+    padding-right: 3px;
+}
+
+#left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(61, 59, 59);
+    width: 30%;
+    word-wrap: break-word;
+    color: white;
+    padding: 2%;
+    padding-bottom: 4%;
+    padding-left: 3%;
+    font-size: 13px;
+    /* overflow: hidden; */
+}
+
+#displayPic{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    border: 3px solid white;
+    margin: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#left div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#left div span{
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.leftIcon{
+    height: 15px;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 1px lightgray);
+}
+
+#left div>h1{
+    font-size: 23px;
+}
+
+#left #education section{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+}
+
+#right h1{
+    padding-left: 5px;
+    font-size: 22px;
+}
+
+#right  #workExp h2{
+    padding-left: 5px;
+    font-size: 17px;
+}
+
+#right #workExp h3{
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+#right #workExp p{
+    font-family: monospace;
+    padding-left: 15px;
+}
+
+#right div{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#right #name{
+    text-align: center;
+    margin-top: 0;
+    color: rgb(61, 59, 59);
+    padding: 15px 0;
+}
+
+#right #name h3{
+    font-size: 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: max-content;
+    margin: auto;
+    margin-top: 7px;
+    padding: 3px 5px;
+    font-weight: normal;
+}
+
+#right p{
+    padding-left: 10px;
+}
+#right #projects div{
+    padding-left: 15px;
+}
+
+#right #projects h2{
+    font-size: 20px;
+}

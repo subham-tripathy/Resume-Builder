@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+
+<!-- 
+
+    
+    formAbout
+    formPhno
+    formEmail
+    formStateAndCountry
+    formCollege
+    formDegree
+    formCollegeCGPA
+    formHighSchool
+    formHighSchoolCGPA
+    formCompanyName
+    formCompanyDescription
+    formProjectName
+    formProjectDescription
+
+-->
+
+
+
+
+
+
+
+
+
+
+<title>RESUME</title>
+</head>
+<body>
+    <script>
+            const urlParams = new URLSearchParams(window.location.search);
+    </script>
+    <div id="body">
+        <section id="left">
+            <img src="./pics/DP.jpg" alt="displayPic" id="displayPic">
+    
+            <div id="skill">
+                <span>
+                    <h1>Skills</h1> 
+                </span>
+                <hr style="margin-bottom: 10px;">
+                <p style="display: none;" id="python">Python</p>
+                <p style="display: none;" id="c">C</p>
+                <p style="display: none;" id="cpp">C++</p>
+                <p style="display: none;" id="java">Java</p>
+            </div>
+            
+            <div id="education">
+                <h1>Education</h1>          <!-- EDUCATION ICON TO BE PUT HERE -->
+                <hr>
+                <section id="college">
+                    <h1>College Name</h1>
+                    <h2 style="font-size: 15px;">Degree Name</h3>
+                    <h3 style="font-size: 13px;">CGPA</h3>
+                </section>
+                <section id="highSchool">
+                    <h1>High School Name</h1>
+                    <h3 style="font-size: 13px;">CGPA/Percentage</h3>
+                </section>
+            </div>
+            
+            <div id="contact">
+                <h1>Contact</h1>
+                <hr>
+                <span>
+                    <!-- <img src="./pics/phone.png" alt="phone" class="leftIcon" /> -->
+                    <p id="phno">Phone Number</p>
+                </span>
+                
+                <span>
+                    <!-- <img src="./pics/email.png" alt="email" class="leftIcon"> -->
+                    <p id="email">Email Address</p>
+                </span>
+                <span>
+                    <!-- LOCATION ICON -->
+                    <p id="StateAndCountry">State and Country</p>
+                </span>
+            </div>
+        </section>
+    
+    
+        <section id="right">
+            <div id="name">
+                <h1><script>document.write(urlParams.get("formName"));</script></h1>
+                <h3><script>document.write(urlParams.get("formRole"));</script></h3>
+            </div>
+    
+            <div id="about">
+                <h1>About</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis minima molestiae voluptatum quam tempore facilis fugiat voluptas, ipsam iusto minus odio! Nobis architecto veniam maxime atque, reprehenderit consequatur optio vero rem, consectetur nam omnis facere est vel deserunt natus sint?</p>
+            </div>
+    
+            <div id="workExp">
+                <h1>Experience</h1>
+                <hr>
+                <h2>Company Name</h2>
+                <!-- <h3>From Date & To Date</h3> -->
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, cumque. Excepturi alias architecto ut ipsa est rem itaque nam? Provident.</p>
+            </div>
+    
+            <div id="projects">
+                <h1>Projects</h1>
+                <hr>
+                <div>
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, culpa!</p>
+                </div>
+            </div>
+    
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
